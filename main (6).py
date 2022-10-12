@@ -1,12 +1,16 @@
-#Created by: Alexander James with help by Owen Whalley
-#Created on: 2022/10/12
+# Created by: Alexander James with help by Owen Whalley
+# Created on: 2022/10/12
 
 # This code asks the user for 2 numbers to subtract, and gives the quotient and remainder
 x = int(input("What is your first number: "))
 y = int(input("What is your second number: "))
 
 # This counts the number of times the code loops, and assigns that number to the quotient.
-count = -1
+
+if x < 10:
+  count = -1
+else:
+  count = 0
 
 while x > 0:
   x -= y
